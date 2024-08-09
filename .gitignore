@@ -1,5 +1,38 @@
-# ignoring development directories
-/node_modules
+# Node.js dependencies
+node_modules/
 
-# ignoring environment variables
-*.env
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+logs/
+pids/
+*.pid
+*.seed
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE and editor specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Test coverage
+coverage/
+*.lcov
+
+# NPM
+package-lock.json
+npm-debug.log
+yarn-error.log
+
+# Optional: specific file for `npm ci` if using `npm ci` instead of `npm install`
+.npm/
