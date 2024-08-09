@@ -1,0 +1,117 @@
+/* * *  The stylsheet containing all the global styling and utilities * * */
+/* ====================================================================== */
+
+
+/* Importing the google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* global browser style resetting */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* * * Defining the global styling variables * * */
+/* ============================================= */
+
+
+
+/* * * Defining the Utility classes * * */
+/* ==================================== */
+
+/* Height and Width */
+.h-full{ height: 100%; }
+.h-screen{ height: 100vh; }
+.h-max-content{ height: max-content; }
+.w-max-content{ width: max-content; }
+.w-full{ width: 100%; }
+.w-screen{ width: 100vw; }
+
+/* display types */
+.display-none{ display: none; }
+.inline{ display: inline; }
+.block{ display: block; }
+.inline-block{ display: inline-block; }
+.grid{ display: grid; }
+.flex{ display: flex; }
+
+/* flex properties */
+.flex-col{ flex-direction: column; }
+.flex-row{ flex-direction: row; }
+.flex-auto{ flex: auto; }
+.flex-1{ flex: 1; }
+.flex-wrap{ flex-wrap: wrap; }
+.flex-no-wrap{ flex-wrap: nowrap; }
+.shrink-0{ flex-shrink: 0; }
+
+.items-center{ align-items: center; }
+.items-start{ align-items: start; }
+.items-end{ align-items: end; }
+.justify-center{ justify-content: center; }
+.justify-between{ justify-content: space-between; }
+.justify-start{ justify-content: start; }
+.justify-end{ justify-content: end; }
+.justify-evenly{ justify-content: space-evenly; }
+.justify-around{ justify-content: space-around; }
+
+/* position types */
+.absolute{ position: absolute; }
+.relative{ position: relative; }
+.fixed{ position: fixed; }
+.sticky{ position: sticky; }
+.top-0{ top: 0; }
+.left-0{ left: 0; }
+.right-0{ right: 0; }
+.bottom-0{ bottom: 0; }
+
+/* text styling */
+.text-center{ text-align: center; }
+.text-left{ text-align: left; }
+.text-right{ text-align: right; }
+
+.uppercase{ text-transform: uppercase; }
+.lowercase{ text-transform: lowercase; }
+.capitalise{ text-transform: capitalize; }
+
+.decoration-none{ text-decoration: none; }
+.underline{ text-decoration: underline; }
+
+/* Overflow properties */
+.overflow-auto{ overflow: auto; }
+.overflow-hidden{ overflow: hidden; }
+.overflow-scroll{ overflow: scroll; }
+.overflow-x-auto{ overflow-x: auto; }
+.overflow-x-hidden{ overflow-x: hidden; }
+.overflow-x-scroll{ overflow-x: scroll; }
+.overflow-y-auto{ overflow-y: auto; }
+.overflow-y-hidden{ overflow-y: hidden; }
+.overflow-y-scroll{ overflow-y: scroll; }
+
+/* margin properties */
+.m-auto{ margin: auto; }
+.m-1{ margin: .25rem; }
+.m-2{ margin: .5rem; }
+.m-3{ margin: .75rem; }
+.m-4{ margin: 1rem; }
+.mx-auto{ margin-inline: auto; }
+.my-auto{ margin-block: auto; }
+
+/* padding properties */
+.p-auto{ padding: auto; }
+.p-1{ padding: .25rem; }
+.p-2{ padding: .5rem; }
+.p-3{ padding: .75rem; }
+.p-4{ padding: .1rem; }
+.px-auto{ padding-inline: auto; }
+.py-auto{ padding-block: auto; }
+
+/* other utility styles */
+.cursor-pointer{ cursor: pointer; }
+.list-style-none{ list-style-type: none; }
+.bg-transparent{ background: transparent; }
+.outline-none{ outline: none; }
+.border{ border: 1px solid gray; }
+.bg-beige{ background: beige; }
