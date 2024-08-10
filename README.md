@@ -57,7 +57,7 @@ Code Crate
 ## ⚙️ Project Setup
 
 1. Open Github and navigate to official repository at ```https://github.com/NisargKaneriya/CodeCrate```
-2. Then create a ```fork``` of the official repository into your account. While forking do ```uncheck``` the ```Copy only main branch``` button so you can fork all the branches of original repository.
+2. Then create a ```fork``` of the official repository into your account.
 3. Now as you will be directed to your ```forked version``` of the repository.
 4. From there ```copy``` your repository's ```https link``` from the ```Code``` section.
 5. Now navigate to the location within your system where you would like to clone the project.
@@ -69,36 +69,40 @@ git clone <https link copied>
 ```
 git remote add upstream https://github.com/NisargKaneriya/CodeCrate
 ```
-8. Now fetch the latest changes from Main repository of upstream by,
+8. Now fetch the latest changes from Official repository of upstream inlcuding all the branches and everything just by executing,
 ```
 git fetch upstream
 ```
-9. Now checkout to your ```Development``` branch and make sure is always up-to-date with upstream before you start contributing,
+9. Now if you want then you can create your owm new local branch in your forked repository by,
 ```
-git checkout Development
-git pull upstream Development
+git checkout main
+git checkout -b <new-branch-name>
 ```
-10. After writting your piece of program, push all the changes from your side into your local repository by,
+10. To verify all your branches that you have including your remote/origin and remote/upstream branches you can execute,
+```
+git branch -a
+```
+10. So now you will be on the branch you created, After writting your piece of program, push all the changes from your side into your local repository by,
 ```
 git add .
 git commit -m "<commit message>"
-git push origin Development
+git push origin <your-branch>
 ```
-11. Now once you are all set-up to push all your changes from ```Your-Repository/Development``` branch to the ```Your-Repository/main``` branch, you can follow the below given stpes:
-    - Go to ```www.github.com``` and navigate to your repository then navigate to ```Development``` branch.
+11. Now once you are all set-up to push all your changes from ```Your-Repository/<your-branch>``` branch to the ```Your-Repository/main``` branch, you can follow the below given stpes:
+    - Go to ```www.github.com``` and navigate to your repository then navigate to ```<your-branch>``` branch.
     - Now click on ```Compare Branch``` and then,
     - Select the comparision criterias as below
-        - ```Your-Repository```-```main``` <- ```Your-Repository```-```Development```
+        - ```Your-Repository```-```main``` <- ```Your-Repository```-```<your-branch>```
         - Add appropriate description for the Pull request.
     - Then navigate to ```Your-Repository/main``` and open ```Pull Requests``` tab and accept your pull request to push your changes into ```Your-Repository/main``` branch.
 12. In order to push the contribution from ```Your-Repository/main``` branch to the ```NisargKaneriya/CodeCrate/Development``` branch, you can follow the below given steps:
     - Go to ```www.github.com``` and navigate to your repository then navigate to ```main``` branch.
     - Now click on ```Compare Branch``` and then,
     - Select the comparision criterias as below
-        - ```NisargKaneriya```-```Development``` <- ```Your-Repository```-```Development```
+        - ```NisargKaneriya```-```Development``` <- ```Your-Repository```-```main```
         - Add appropriate description for the Pull request.
         - And all set and done... your pull request will be merged by the Owner after verification.
-13. Everytime you start working on the code, don't forget to first update ```Your-Repository/main``` and ```Your-Repository/Development``` branch by the latest changes from the official repositories. 
+13. Everytime you start working on the code, don't forget to first update ```Your-Repository/main``` and ```Your-Repository/<your-branch>``` branch by the latest changes from the official upstream repositories. 
 
 ```NOTE:``` Please avoid creating pull request for contributing your changes directly to ```NisargKaneriya/CodeCrate/main``` branch, in this case your pull request would not be accepted in any scenarios. 
 you must be submitting your pull requests to ```NisargKaneriya/CodeCrate/Development``` branch only.
