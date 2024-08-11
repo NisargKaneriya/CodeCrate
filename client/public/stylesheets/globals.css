@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
 
 /* global browser style resetting */
 *{
@@ -17,6 +18,28 @@
 /* * * Defining the global styling variables * * */
 /* ============================================= */
 
+/* Color theme for the Dark-mode */
+:root .dark{
+    --bg-main: #111827;
+    --bg-primary: #1e293b;
+    --bg-secondary: #334155;
+    --color-main: #ecf6f7;
+    --logo-gradient: linear-gradient(to right, #4ade80, #fb7185, #0891b2);
+    --bg-navbar-main: #1e293b80;
+}
+
+/* Color theme for the Light-mode */
+:root{
+    --bg-main: rgb(236, 246, 247);     
+    --bg-primary: rgb(203, 213, 225); 
+    --bg-secondary: #c8d2dc;
+    --color-main: #1e293b;
+    --color-primary: #4ade80;
+    --color-secondary: #06b6d4;
+    --color-tertiary: #fb7185;
+    --bg-navbar-main: rgba(203, 213, 230, 0.4);
+    --logo-gradient: linear-gradient(to left, #4ade80, #fb7185, #06b6d4);
+}
 
 
 /* * * Defining the Utility classes * * */
@@ -108,7 +131,15 @@
 .px-auto{ padding-inline: auto; }
 .py-auto{ padding-block: auto; }
 
+/* gap properties */
+.gap-1{ gap: .25rem; }
+.gap-2{ gap: .5rem; }
+.gap-3{ gap: .75rem; }
+.gap-4{ gap: .1rem; }
+
 /* other utility styles */
+.object-cover{ object-fit: cover; }
+.object-contain{ object-fit: contain; }
 .cursor-pointer{ cursor: pointer; }
 .list-style-none{ list-style-type: none; }
 .bg-transparent{ background: transparent; }
