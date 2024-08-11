@@ -12,4 +12,7 @@ body {
 /* main element */
 main {
     width: 99%;
+    height: auto;
+    border: 1px dashed red;
 }
+
