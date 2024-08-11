@@ -1,0 +1,15 @@
+/* Index page Body */
+body {
+    background: var(--bg-main);
+    color: var(--color-main);
+    transition: all .5s ease-in-out;
+    font-family: "Roboto", sans-serif;
+}
+
+/* * * Main body section styling * * */
+/* ============================ */
+
+/* main element */
+main {
+    width: 99%;
+}
