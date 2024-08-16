@@ -19,14 +19,17 @@
     <link rel="stylesheet" href="/stylesheets/navbar.css">
     <link rel="stylesheet" href="/stylesheets/sidebar.css">
     <link rel="stylesheet" href="/stylesheets/index.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
     <title>Code Crate | Home</title>
 </head>
 
-<body class="dark flex flex-col w-screen h-screen">
-    <!-- Including the Partial components -->
+<body class="flex flex-col items-center w-full h-full overflow-y-auto relative">
+    <!-- Including the Navabr component -->
     <%- include('../partials/navbar') %>
-    <%- include('../partials/sidebar') %>
-        <%- body %>
+        <main class="w-full m-auto h-screen flex relative">
+            <%- include("../partials/sidebar") %>
+        </main>
+        <%- include("../partials/footer") %>
 </body>
 <!-- Importing custom scripts -->
 <script src="/scripts/index.js"></script>

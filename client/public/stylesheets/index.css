@@ -1,18 +1,17 @@
-/* Index page Body */
+/* * * Index page styling * * */
+/* ================================= */
+
+/* Index body styling */
 body {
     background: var(--bg-main);
     color: var(--color-main);
     transition: all .5s ease-in-out;
     font-family: "Roboto", sans-serif;
+    height: min-content;
 }
 
-/* * * Main body section styling * * */
-/* ============================ */
 
-/* main element */
+/* main container styling */
 main {
-    width: 99%;
-    height: auto;
-    border: 1px dashed red;
+    height: 100%;
 }
-
