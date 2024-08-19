@@ -28,8 +28,10 @@
     --text-color-main: #cbd5e1;
 
     --bg-navbar-main: #1e293b80;
+
     --logo-gradient: linear-gradient(to right, #4ade80, #fb7185, #0891b2);
     --scrollbar-gradient: linear-gradient(#64748b, #475569, #334155);
+    --heading-gradient: linear-gradient(45deg, #4b5563, #a1a1aa, #71717a);
 }
 
 /* Color theme for the Light-mode */
@@ -47,8 +49,10 @@
     --text-color-primary: #64748b;
 
     --bg-navbar-main: rgba(203, 213, 230, 0.4);
+
     --logo-gradient: linear-gradient(to left, #4ade80, #fb7185, #06b6d4);
     --scrollbar-gradient: linear-gradient(#94a3b8, #cbd5e1, #e2e8f0);
+    --heading-gradient: linear-gradient(45deg, #d4d4d8, #a3a3a3, #d4d4d8);
 }
 
 
@@ -214,6 +218,10 @@
 
 .text-right {
     text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
 }
 
 .uppercase {

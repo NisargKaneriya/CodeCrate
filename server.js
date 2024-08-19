@@ -8,6 +8,7 @@ import cookieParser from "cookie-parser";
 
 // Importing the custom routes
 import mainRoute from "./server/routes/mainRoute.js";
+import authRoute from "./server/routes/authRoute.js";
 
 // Configuring the env variables
 dotenv.config({ path: ".env" });
@@ -38,6 +39,7 @@ app.use("/scripts", express.static(path.join(__dirname, "client/public/scripts")
 app.use("/img", express.static(path.join(__dirname, "client/public/img")));
 
 // Setting up the custom routes
+app.use("/auth", authRoute);
 app.use("/", mainRoute);
 
 // Grabbing the port for the server binding

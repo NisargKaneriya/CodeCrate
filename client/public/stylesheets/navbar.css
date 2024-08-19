@@ -21,7 +21,7 @@ nav {
 nav #signup-btn {
     width: max-content;
     padding: .5rem 1rem;
-    background: var(--bg-secondary);
+    background: var(--heading-gradient);
     outline: none;
     border-radius: 10px !important;
     border: transparent;
@@ -29,7 +29,7 @@ nav #signup-btn {
 }
 
 nav #signup-btn a {
-    color: var(--color-main);
+    color: var(--bg-main);
     font-size: 14px;
     letter-spacing: .1rem;
 }
