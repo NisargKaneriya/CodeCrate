@@ -1,0 +1,28 @@
+/* * * Footer styling * * */
+/* ====================== */
+
+
+/* sidebar footer element */
+#sidebar {
+    background: var(--bg-navbar-main);
+    width: max-content;
+    height: 92%;
+    align-self: flex-end;
+    transition: all .5s ease-in-out;
+}
+
+/* sidebar navigation links */
+#sidebar #sidebar-nav-links {
+    gap: 2rem;
+}
+
+#sidebar box-icon {
+    fill: var(--text-color-main);
+    width: 28px;
+    height: 28px;
+    transition: all .5s ease-in-out;
+}
+
+#sidebar box-icon:hover {
+    fill: var(--color-tertiary);
+}

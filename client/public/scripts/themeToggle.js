@@ -9,6 +9,6 @@ toggleBtn.addEventListener("click", () => {
 	// Change icon after a short delay to ensure the animation is visible
 	toggleBtn.firstElementChild.setAttribute(
 		"name",
-		document.body.classList.contains("dark") ? "moon" : "sun"
+		document.body.classList.contains("dark") ? "sun" : "moon"
 	);
 });

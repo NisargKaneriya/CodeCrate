@@ -1,0 +1,107 @@
+/* * * Footer styling * * */
+/* ====================== */
+
+
+/* root footer element */
+footer {
+    border-top: 3px solid var(--bg-secondary);
+    padding-block: 1rem;
+    background: var(--bg-navbar-main);
+}
+
+/* Upper footer stylings */
+footer #upper-footer #footer-links {
+    gap: 3rem;
+}
+
+footer #upper-footer #copyright {
+    color: var(--text-color-main);
+    letter-spacing: .1rem;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+footer #upper-footer #footer-links>div {
+    gap: 1rem;
+}
+
+footer #upper-footer #footer-links>div>div {
+    gap: .5rem;
+}
+
+footer #upper-footer #footer-links span {
+    font-weight: 400;
+    letter-spacing: .1rem;
+    font-size: 18px;
+}
+
+footer #upper-footer #footer-links>div>div a {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: .5rem;
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--text-color-main);
+}
+
+footer #upper-footer box-icon {
+    fill: var(--text-color-main);
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Lower footer stylings */
+footer #lower-footer div span>p {
+    color: var(--text-color-main);
+    font-weight: 300;
+    letter-spacing: .1rem;
+    font-size: 13px;
+}
+
+footer #lower-footer form {
+    width: 100%;
+}
+
+footer #lower-footer form input {
+    background: transparent;
+    color: var(--text-color-main);
+    border: 0;
+    border-bottom: 1px solid var(--text-color-primary);
+    padding: .5rem;
+    font-size: 14px;
+    width: 15rem;
+}
+
+footer #lower-footer form button {
+    background: transparent;
+    border: 0;
+    transition: all .3s ease-in-out;
+    border-radius: 50%;
+}
+
+footer #lower-footer form button:hover {
+    background-color: var(--bg-secondary);
+}
+
+footer #lower-footer form button box-icon {
+    fill: var(--text-color-main);
+    transition: all .3s ease-in-out;
+}
+
+footer #lower-footer form button box-icon:hover {
+    fill: var(--color-primary);
+}
+
+footer #lower-footer:last-child a box-icon {
+    fill: var(--text-color-primary);
+    width: 32px;
+    height: 32px;
+    transition: all .3s ease-in-out;
+}
+
+footer #lower-footer:last-child a box-icon:hover {
+    fill: var(--text-color-main);
+}

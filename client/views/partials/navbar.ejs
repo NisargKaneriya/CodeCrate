@@ -1,10 +1,10 @@
 <!-- The navbar component (appears on all pages) -->
 
-<nav class="sticky top-0 flex items-center justify-between mx-auto">
+<nav class="fixed top-0 flex items-center justify-between w-full mx-auto">
     <!-- Left Navbar -->
     <div class="flex items-center justify-center w-max-content">
         <!-- Logo for the website -->
-        <h1 id="logo" class="flex items-center justify-center">
+        <h1 id="logo" class="logo flex items-center justify-center">
             <span class="logo-punct">.</span>
             <span class="logo-aplha">codeCrate</span>
         </h1>
@@ -14,7 +14,7 @@
     <div class="flex items-center justify-between gap-3 w-max-content h-max-content">
         <!-- theme toggler -->
         <div id="toggle-theme" class="flex items-center justify-center p-2">
-            <box-icon name="sun" />
+            <box-icon name="moon" />
         </div>
         <!-- Profile card -->
         <div id="profile-card" class="flex items-center justify-center relative">
@@ -38,7 +38,7 @@
         </div>
         <!-- SignUp button -->
         <button type="button" id="signup-btn" class="flex items-center justify-center">
-            <a href="#" class="decoration-none w-full h-full">Sign Up</a>
+            <a href="/auth/signup" class="decoration-none w-full h-full">Sign Up</a>
         </button>
     </div>
 </nav>
