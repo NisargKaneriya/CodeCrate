@@ -11,9 +11,9 @@
     <!-- Right container -->
     <div id="right-cont" class="flex flex-col items-center justify-center h-full relative">
         <h2 class="heading-text flex items-center justify-center w-full">Sign Up</h2>
-        <form action="" id="login-form" class="flex flex-col items-center justif-center w-full">
+        <form action="/api/auth/signup" method="post" id="login-form" class="flex flex-col items-center justif-center w-full">
             <div class="input-box flex items-center justify-center relative w-full">
-                <input type="text" name="fullname" id="auth-fullname" required>
+                <input type="text" name="fullName" id="auth-fullname" required>
                 <label for="auth-fullname">Fullname</label>
                 <i class='bx bxs-user shrink-0'></i>
             </div>
@@ -28,7 +28,7 @@
                 <i class='bx bxs-lock shrink-0'></i>
             </div>
             <div class="input-box flex items-center justify-center relative w-full">
-                <input type="password" name="password" id="auth-cnfm-passwd" required>
+                <input type="password" name="cnfmPassword" id="auth-cnfm-passwd" required>
                 <label for="authcnfm--passwd">Confirm Password</label>
                 <i class='bx bx-check-double shrink-0'></i>
             </div>
@@ -38,7 +38,7 @@
         </form>
         <span id="log-sign-link" class="flex flex-col items-center justify-center w-full">
             <p>Already have an account?</p>
-            <a class="" href="/auth/login">Login here</a>
+            <a class="" href="/api/auth/login">Login here</a>
         </span>
     </div>
 </main>
