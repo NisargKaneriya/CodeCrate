@@ -1,0 +1,33 @@
+<main id="auth-cont" class="flex items-center justify-center gap-4 p-4">
+    <!-- Left container -->
+    <div id="left-cont" class="flex flex-col items-start justify-center gap-2 h-full">
+        <h2 class="heading-text w-full">Welcome Back!</h2>
+        <span class="">
+            <p>Streamline your coding experience by managing your snippets efficiently.
+                Log in to access your personalized collection of code snippets and get back to building faster.</p>
+        </span>
+    </div>
+    <!-- Right container -->
+    <div id="right-cont" class="flex flex-col items-center justify-center h-full relative">
+        <h2 class="heading-text flex items-center justify-center w-full">Log In</h2>
+        <form action="" id="login-form" class="flex flex-col items-center justif-center w-full">
+            <div class="input-box flex items-center justify-center relative w-full">
+                <input type="text" name="email" id="login-email" required>
+                <label for="login-email">Email</label>
+                <i class='bx bxs-envelope shrink-0'></i>
+            </div>
+            <div class="input-box flex items-center justify-center relative w-full">
+                <input type="password" name="password" id="login-passwd" required>
+                <label for="login-passwd">Password</label>
+                <i class='bx bxs-lock shrink-0'></i>
+            </div>
+            <button type="submit" class="outline-none relative">
+                <a>Login</a>
+            </button>
+        </form>
+        <span id="log-sign-link" class="flex flex-col items-center justify-center w-full">
+            <p>Don't have an account yet?</p>
+            <a class="" href="/api/auth/signup">Create here</a>
+        </span>
+    </div>
+</main>

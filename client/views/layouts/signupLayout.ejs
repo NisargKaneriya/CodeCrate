@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google font CDN Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,23 +14,15 @@
     <!-- Importing custom stylesheets -->
     <link rel="stylesheet" href="/stylesheets/globals.css">
     <link rel="stylesheet" href="/stylesheets/navbar.css">
-    <link rel="stylesheet" href="/stylesheets/sidebar.css">
-    <link rel="stylesheet" href="/stylesheets/index.css">
-    <link rel="stylesheet" href="/stylesheets/footer.css">
-    <title>Code Crate | Home</title>
+    <link rel="stylesheet" href="/stylesheets/auth.css">
+    <title>Code Crate | Signup</title>
 </head>
-
-<body class="dark flex flex-col items-center w-full h-full overflow-y-auto relative">
-    <!-- Including the Navabr component -->
+<body class="dark flex items-center justify-center relative w-full h-screen overflow-hidden">
     <%- include('../partials/navbar') %>
-        <main class="w-full m-auto h-screen flex relative">
-            <%- include("../partials/sidebar") %>
-        </main>
-        <%- include("../partials/footer") %>
+        <%- body %>
 </body>
 <!-- Importing custom scripts -->
 <script src="/scripts/index.js"></script>
 <script src="/scripts/themeToggle.js"></script>
-<script src="/scripts/navbar.js"></script>
 
 </html>

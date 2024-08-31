@@ -1,0 +1,44 @@
+<main id="auth-cont" class="flex items-center justify-center gap-4 p-4">
+    <!-- Left container -->
+    <div id="left-cont" class="flex flex-col items-start justify-center gap-2 h-full">
+        <h2 class="heading-text w-full">Join Code Crate Today!</h2>
+        <span class="">
+            <p>Unlock the full potential of your coding workflow. Create an account to save, organize, and manage your
+                code snippets
+                all in one place. Boost your productivity and never lose a piece of code again.</p>
+        </span>
+    </div>
+    <!-- Right container -->
+    <div id="right-cont" class="flex flex-col items-center justify-center h-full relative">
+        <h2 class="heading-text flex items-center justify-center w-full">Sign Up</h2>
+        <form action="/api/auth/signup" method="post" id="login-form" class="flex flex-col items-center justif-center w-full">
+            <div class="input-box flex items-center justify-center relative w-full">
+                <input type="text" name="fullName" id="auth-fullname" required>
+                <label for="auth-fullname">Fullname</label>
+                <i class='bx bxs-user shrink-0'></i>
+            </div>
+            <div class="input-box flex items-center justify-center relative w-full">
+                <input type="text" name="email" id="auth-email" required>
+                <label for="auth-email">Email</label>
+                <i class='bx bxs-envelope shrink-0'></i>
+            </div>
+            <div class="input-box flex items-center justify-center relative w-full">
+                <input type="password" name="password" id="auth-passwd" required>
+                <label for="auth-passwd">Password</label>
+                <i class='bx bxs-lock shrink-0'></i>
+            </div>
+            <div class="input-box flex items-center justify-center relative w-full">
+                <input type="password" name="cnfmPassword" id="auth-cnfm-passwd" required>
+                <label for="authcnfm--passwd">Confirm Password</label>
+                <i class='bx bx-check-double shrink-0'></i>
+            </div>
+            <button type="submit" class="outline-none relative">
+                <a>Signup</a>
+            </button>
+        </form>
+        <span id="log-sign-link" class="flex flex-col items-center justify-center w-full">
+            <p>Already have an account?</p>
+            <a class="" href="/api/auth/login">Login here</a>
+        </span>
+    </div>
+</main>
