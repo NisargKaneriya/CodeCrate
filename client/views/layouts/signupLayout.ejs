@@ -14,15 +14,18 @@
     <!-- Importing custom stylesheets -->
     <link rel="stylesheet" href="/stylesheets/globals.css">
     <link rel="stylesheet" href="/stylesheets/navbar.css">
+    <link rel="stylesheet" href="/stylesheets/toast.css">
     <link rel="stylesheet" href="/stylesheets/auth.css">
     <title>Code Crate | Signup</title>
 </head>
 <body class="dark flex items-center justify-center relative w-full h-screen overflow-hidden">
     <%- include('../partials/navbar') %>
+    <%- include('../partials/toast') %>
         <%- body %>
 </body>
 <!-- Importing custom scripts -->
-<script src="/scripts/index.js"></script>
 <script src="/scripts/themeToggle.js"></script>
+<script src="/scripts/toast.js"></script>
+<script src="/scripts/auth/userSignup.js"></script>
 
 </html>

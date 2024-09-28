@@ -17,6 +17,7 @@
     <!-- Importing custom stylesheets -->
     <link rel="stylesheet" href="/stylesheets/globals.css">
     <link rel="stylesheet" href="/stylesheets/navbar.css">
+    <link rel="stylesheet" href="/stylesheets/toast.css">
     <link rel="stylesheet" href="/stylesheets/sidebar.css">
     <link rel="stylesheet" href="/stylesheets/index.css">
     <link rel="stylesheet" href="/stylesheets/footer.css">
@@ -26,14 +27,17 @@
 <body class="dark flex flex-col items-center w-full h-full overflow-y-auto relative">
     <!-- Including the Navabr component -->
     <%- include('../partials/navbar') %>
+    <%- include('../partials/toast') %>
         <main class="w-full m-auto h-screen flex relative">
             <%- include("../partials/sidebar") %>
+            <%- body %>
         </main>
         <%- include("../partials/footer") %>
 </body>
 <!-- Importing custom scripts -->
 <script src="/scripts/index.js"></script>
-<script src="/scripts/themeToggle.js"></script>
 <script src="/scripts/navbar.js"></script>
-
+<script src="/scripts/themeToggle.js"></script>
+<script src="/scripts/toast.js"></script>
+<script src="/scripts/auth/userLogout.js"></script>
 </html>

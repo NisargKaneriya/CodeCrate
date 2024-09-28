@@ -2,13 +2,13 @@
 import express from 'express';
 
 // Importing the custom controllers
-import { indexController } from '../controllers/mainController.js';
+import { renderIndexPage } from '../controllers/renderController.js';
 
 // Creating a router
 const router = express.Router();
 
 // Defining the routes
-router.get('/', indexController);
+router.get('/', renderIndexPage);
 
 // Default route when the above route don't matches
 router.get('*', (req, res) => {
