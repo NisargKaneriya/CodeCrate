@@ -1,0 +1,145 @@
+.notifications {
+    position: fixed;
+    top: 10px;
+    z-index: 10000;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.toast {
+    position: relative;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+    color: #ffffee;
+    width: max-content;
+    display: grid;
+    grid-template-columns: 70px 1fr 70px;
+    border-radius: 5px;
+    animation: show_toast 5s ease 1 forwards;
+}
+
+.toast .title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.toast i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.toast span,
+.toast .close {
+    opacity: 0.6;
+    font-size: 12px;
+    color: #fff;
+}
+
+/* Animation for showing the toast */
+@keyframes show_toast {
+    0% {
+        /* Start off-screen */
+        transform: translateY(-100%);
+    }
+
+    20% {
+        /* Enter quickly, reaching the visible area faster */
+        transform: translateY(10px);
+    }
+
+    40% {
+        /* Settle in position */
+        transform: translateY(0);
+    }
+
+    85% {
+        /* Stay visible until just before exit */
+        transform: translateY(0);
+    }
+
+    90% {
+        /* Small bounce upwards */
+        transform: translateY(5px);
+    }
+
+    100% {
+        /* Smooth exit out of the screen */
+        transform: translateY(-100%);
+    }
+}
+
+/* progress bar timeout */
+.toast::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 3px;
+    border-radius: inherit;
+    animation: timeOut 3s linear 1 forwards;
+    animation-delay: 1.8s;
+}
+
+/* progress bar animation */
+@keyframes timeOut {
+    to {
+        width: 0%;
+    }
+}
+
+.toast.success {
+    background-image: var(--toast-success-gradient);
+}
+
+.toast.success i {
+    color: var(--success-main);
+}
+
+.toast.success::before {
+    background: var(--success-main);
+    box-shadow: 0 0 10px var(--success-main);
+}
+
+.toast.error {
+    background-image: var(--toast-error-gradient);
+}
+
+.toast.error i {
+    color: var(--error-main);
+}
+
+.toast.error::before {
+    background: var(--error-main);
+    box-shadow: 0 0 10px var(--error-main);
+}
+
+.toast.warning {
+    background-image: var(--toast-warning-gradient);
+}
+
+.toast.warning i {
+    color: var(--warning-main);
+}
+
+.toast.warning::before {
+    background: var(--warning-main);
+    box-shadow: 0 0 10px var(--warning-main);
+}
+
+.toast.info {
+    background-image: var(--toast-info-gradient);
+}
+
+.toast.info i {
+    color: var(--info-main);
+}
+
+.toast.info::before {
+    background: var(--info-main);
+    box-shadow: 0 0 10px var(--info-main);
+}
